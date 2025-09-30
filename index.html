@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undarmaa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      .btn {
+        background-color: #6e5f50;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: white;
+        transition: 0.3s;
+      }
+      .btn:hover {
+        background-color: #A89784;
+      }
+    </style>
+
+  </head>
+  <body class="max-w-7xl mx-auto font-sans bg-[#f6f5f3] text-[rgba(27,27,27,1)]"> 
+    <!-- welcome section -->
+    <section class="bg-[url('Image/banner.jpg')] bg-cover w-full h-screen relative">
+       <div class="">
+      <div class="bg-black flex justify-between text-white items-center p-2 md:p-5">
+      <div class="text-[9px] md:text-base">
+        <span>★★★★★ 4.9 ON TrustPilot</span>
+      </div>
+      <div class="flex gap-2 text-[9px] md:text-base">
+        <i class="fa-solid fa-truck-fast text-green-500"></i>
+        <p>Free shipping over 799 dkk</p>
+      </div>
+      <div class="flex gap-3 items-center text-[9px] md:text-base">
+        <img src="Image/wel.png" class="w-5 h-5" alt="">
+        <p>Danks</p>
+        <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.5272 1.8393L7.96466 8.4018C7.90371 8.46281 7.83134 8.51122 7.75167 8.54424C7.672 8.57727 7.58661 8.59426 7.50036 8.59426C7.41412 8.59426 7.32873 8.57727 7.24906 8.54424C7.16939 8.51122 7.09702 8.46281 7.03607 8.4018L0.473568 1.8393C0.350429 1.71616 0.28125 1.54914 0.28125 1.375C0.28125 1.20085 0.350429 1.03384 0.473568 0.910701C0.596707 0.787562 0.76372 0.718384 0.937865 0.718384C1.11201 0.718384 1.27902 0.787562 1.40216 0.910701L7.50036 7.00973L13.5986 0.910701C13.6595 0.849729 13.7319 0.801363 13.8116 0.768365C13.8913 0.735367 13.9766 0.718384 14.0629 0.718384C14.1491 0.718384 14.2345 0.735367 14.3141 0.768365C14.3938 0.801363 14.4662 0.849729 14.5272 0.910701C14.5881 0.971674 14.6365 1.04406 14.6695 1.12372C14.7025 1.20339 14.7195 1.28877 14.7195 1.375C14.7195 1.46123 14.7025 1.54661 14.6695 1.62627C14.6365 1.70594 14.5881 1.77832 14.5272 1.8393Z" fill="white"/>
+</svg>
+
+      </div>
+    </div>
+
+    <!--PC Navbar area -->
+    <nav class="hidden md:flex justify-between pt-4 pb-2 px-10">
+      <div>
+        <ul class="flex gap-5">
+          <li><a href="#" class="underline">SHOP</a></li>
+          <li><a href="#">EXPLORE</a></li>
+          <li><a href="#">SHOWROOM</a></li>
+        </ul>
+      </div>
+      <div>
+        <img src="Image/logo.png" alt="" />
+      </div>
+      <div class="space-x-3">
+        <input
+          type="search"
+          placeholder="Search"
+          class="bg-[#fefefe68] px-3 py-2 rounded focus:outline-none"
+        />
+        <i class="fa-regular fa-user text-2xl"></i>
+        <i class="fa-solid fa-bag-shopping text-2xl"></i>
+      </div>
+    </nav>
+
+    <!--Mobile Navbar area -->
+    <nav class=" flex justify-between pt-4 pb-2  px-4 md:px-10 md:hidden">
+      <div>
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </div>
+      <div>
+        <img src="Image/logo.png" alt="" />
+      </div>
+      <div class="space-x-3">
+        <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+        <i class="fa-regular fa-user text-2xl"></i>
+        <i class="fa-solid fa-bag-shopping text-2xl"></i>
+      </div>
+    </nav>
+    </div>
+ 
+     <!-- banner area -->
+        <div class="absolute top-28 md:top-48 md:left-20 bg-[#fefefebf] text-[rgba(2,21,44,1)] p-10 space-y-4  md:w-[550px]">
+          <h1 class="text-3xl md:text-5xl ">
+            Naturlig luksus fra
+            Mongoliet
+          </h1>
+          <p>
+            Mongoliets barske klima og 1000 år gamle nomadekultur har skabt den
+            blødeste uld, der varmer din krop og forkæler din hud.
+          </p>
+          <div class="mt-4 space-y-4">
+            <button class="btn w-full text-white mr-5">Se Kollektionen</button>
+            <button class="px-4 w-full py-2 border border-black rounded">Se Kollektionen</button>
+          </div>
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="section px-4 py-12"  data-aos="fade-up" data-aos-duration="1000">
+      <div class="flex flex-col md:flex-row text-2xl gap-8">
+        <div class="md:w-1/2 flex items-center">
+           <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <i class="fa-regular fa-circle-check"></i>
+            <h3>Dansk webshop med rødder i Mongoliet</h3>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-regular fa-circle-check"></i>
+            <h3>Små kollektioner i klassisk design</h3>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-regular fa-circle-check"></i>
+            <h3>Ædle naturfibre der holder i årevis</h3>
+          </div>
+        </div>
+        </div>
+       
+        <!-- Image -->
+        <div class="md:w-1/2">
+          <img
+            src="Image/Rectangle 1662.png"
+            alt="Undarmaa"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section class="py-12" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="text-3xl ml-10 font-semibold text-[rgba(27, 27, 27, 1)] mb-8">
+        Opdage vores ædle fibre
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+        <!-- Cashmere -->
+        <div class="relative group overflow-hidden" data-aos="zoom-in">
+          <img
+            src="Image/f3.png"
+            alt="Cashmere"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/20 hover:bg-black/40 transition duration-500 flex flex-col justify-end p-4 text-white"
+          >
+            <h3 class="text-xl font-semibold">Cashmere</h3>
+            <p class="text-sm mb-3 text-[rgba(217, 220, 223, 1)]">Ikonisk luksus – blød, let og tidløs.</p>
+            <a href="#" class="text-sm font-medium">SE CASHMERE-PRODUKTER →</a>
+          </div>
+        </div>
+
+        <!-- Yakuld -->
+        <div class="relative group overflow-hidden" data-aos="zoom-in">
+          <img
+            src="Image/f2.jpg"
+            alt="Yakuld"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/20 hover:bg-black/40 transition duration-500 flex flex-col justify-end p-4 text-white"
+          >
+            <h3 class="text-xl font-semibold">Yakuld</h3>
+            <p class="text-sm mb-3 text-[rgba(217, 220, 223, 1)]">
+              Ekstremt varm og robust – tilpasset steppernes klima.
+            </p>
+            <a href="#" class="text-sm font-medium">SE CASHMERE-PRODUKTER →</a>
+          </div>
+        </div>
+
+        <!-- Kameluld -->
+        <div class="relative group overflow-hidden" data-aos="zoom-in">
+          <img
+            src="Image/f1.jpg"
+            alt="Kameluld"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black/20 hover:bg-black/40 transition duration-500 flex flex-col justify-end p-4 text-white"
+          >
+            <h3 class="text-xl font-semibold">Kameluld</h3>
+            <p class="text-sm mb-3 text-[rgba(217, 220, 223, 1)]">Naturlige farver, lethed og slidstyrke.</p>
+            <a href="#" class="text-sm font-medium">SE CASHMERE-PRODUKTER →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design with a Noble Fiber -->
+    <section class="relative text-white" data-aos="fade-up" data-aos-duration="1000">
+      <!-- Background Image -->
+      <img
+        src="Image/bg-section.png"
+        alt="Webshop"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <!-- Content -->
+      <div
+        class="relative px-5 md:px-20 py-16 grid grid-cols-1 md:grid-cols-2 gap-12"
+      >
+        <!-- Left Side -->
+        <div class="flex items-center">
+          <h2 class="text-4xl mb-6">
+            Tryg handel – dansk <br />
+            webshop
+          </h2>
+          <!-- <ul class="space-y-4 text-lg">
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-house"></i>
+              Dansk kundeservice og showroom i Søborg
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-truck-fast"></i>
+              Hurtig levering fra lager i Danmark
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-rotate-left"></i>
+              14 dages returret
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-regular fa-star"></i>
+              4,9 stjerner på Trustpilot
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-regular fa-eye"></i>
+              E-mærket webshop siden 2009
+            </li>
+          </ul> -->
+        </div>
+
+        <!-- Right Side -->
+        <div> 
+    
+          <p class="text-yellow-400">★★★★★</p>
+          <p class="text-xl font-bold mb-6">4,9/5 på Trustpilot</p>
+          <div class="space-y-10 text-xl">
+            <blockquote class="pl-4 italic">
+              “Fantastisk service og de mest elegante lækre varer :-)”
+            </blockquote>
+            <blockquote class="teal-400 pl-4 italic">
+              “Lækre sokker, går snart udelukkende i jeres sokker, sommer og
+              vinter. Hurtig og sikker levering.”
+            </blockquote>
+            <blockquote class="pl-4 italic">
+              “Rigtig god kvalitet og til fornuftig pris. Du får ikke bedre
+              cashmere tøj end her. Kommer gerne igen.”
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+
+   
+      <!-- Newsletter Section -->
+    <section class="px-2">
+      <div class="flex flex-col text-center md:text-start justify-center md:flex-row p-5 md:p-24 gap-10 bg-[rgba(215,207,198,1)] -mt-3 relative">
+        <div class="md:w-1/2 space-y-3">
+          <h3 class="text-4xl font-medium">Bliv en del af Undarmaas univers</h3>
+          <p class="text-[rgba(83,83,83,1)]">Tilmeld dig vores nyhedsbrev og få inspiration til klassiske designs, indblik i livet på steppen i Mongoliet og første nyt om showroom-events og kollektioner. Vi deler historier om ædle fibre og tidløse produkter, der varmer – og holder i mange år.</p>
+        </div>
+        <div class="flex flex-col md:w-1/2 space-y-3">
+            <div>
+              <input type="text" class="w-full py-3 px-2 rounded-md focus:outline-none" placeholder="First name">
+            </div>
+            <div>
+              <input type="text" class="w-full py-3 px-2 rounded-md focus:outline-none" placeholder="Din email">
+            </div>
+            <p>Get a free newsletter to your inbox every month. By signing up, you agree to our privacy policy, terms & conditions. </p>
+            <button class="btn w-full text-white">Ja tak, hold mig opdateret</button>
+      </div>
+    </section>
+
+<!-- Lookbook Section -->
+    <section class="py-12 px-4 md:px-0"  data-aos="fade-in" data-aos-duration="1000">
+       <div class="flex items-center justify-between md:mx-10">
+        <h2 class="text-3xl font-semibold text-[rgba(27, 27, 27, 1)] mb-8">
+        Udvalgte produkter
+      </h2>
+      <p class="underline">SHOP ALL</p>
+       </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-1">
+        <div>
+          <a href="#">
+            <img src="Image/Img.png" class="w-full hover:scale-105 hover:shadow-lg transition-transform duration-300 hover:rounded-lg" alt="" />
+          <h3 class="text-xl my-1">Cashmere Plaid</h3>
+          <p>1.995 kr</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="Image/Img (1).png" class="w-full hover:scale-105 hover:shadow-lg transition-transform duration-300 hover:rounded-lg" alt="" />
+          <h3 class="text-xl my-1">Cashmere Plaid</h3>
+          <p>1.995 kr</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="Image/Img (2).png" class="w-full hover:scale-105 hover:shadow-lg transition-transform duration-300 hover:rounded-lg" alt="" />
+          <h3 class="text-xl my-1">Cashmere Plaid</h3>
+          <p>1.995 kr</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="Image/Img (3).png" class="w-full hover:scale-105 hover:shadow-lg transition-transform duration-300 hover:rounded-lg" alt="" />
+          <h3 class="text-xl my-1">Cashmere Plaid</h3>
+          <p>1.995 kr</p>
+          </a>
+        </div>
+        <div>
+       <a href="#">
+           <img src="Image/Img.png" class="w-full hover:scale-105 hover:shadow-lg transition-transform duration-300 hover:rounded-lg" alt="" />
+          <h3 class="text-xl my-1">Cashmere Plaid</h3>
+          <p>1.995 kr</p>
+       </a>
+        </div>
+        <div>
+        <a href="#">
+            <img src="Image/Img (1).png" class="w-full hover:scale-105 hover:shadow-lg transition-transform duration-300 hover:rounded-lg" alt="" />
+          <h3 class="text-xl my-1">Cashmere Plaid</h3>
+          <p>1.995 kr</p>
+        </a>
+        </div>
+        <div>
+          <a href="#">
+              <img src="Image/Img (2).png" class="w-full hover:scale-105 hover:shadow-lg transition-transform duration-300 hover:rounded-lg" alt="" />
+          <h3 class="text-xl my-1">Cashmere Plaid</h3>
+          <p>1.995 kr</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="Image/Img (3).png" class="w-full hover:scale-105 hover:shadow-lg transition-transform duration-300 hover:rounded-lg" alt="" />
+          <h3 class="text-xl my-1">Cashmere Plaid</h3>
+          <p>1.995 kr</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 grid md:grid-cols-2 gap-10" data-aos="zoom-in" data-aos-duration="1000">
+      <!-- Left: Image -->
+      <div>
+        <img
+          src="Image/Rectangle 1664.png"
+          alt="Showroom"
+          class="w-full h-86"
+        />
+      </div>
+
+      <!-- Right: Content -->
+      <div class="ml-10 md:ml-20 lg:ml:44">
+        <h2 class="text-4xl font-semibold leading-snug">
+          Besøg Undarmaa showroom i Søborg
+        </h2>
+        <p class="text-[rgba(83,83,83,1)] mt-2 mb-6">Book nemt en tid i vores showroom.</p>
+
+        <button class="btn my-2 lg:my-4">Læs mere</button>
+
+        <div class="mt-8 text-xl">
+          <h3 class="text-[rgba(91,103,118,1)] font-semibold">Adresse:</h3>
+          <p>Carl Møllers Allé 33 (kld.), 2860 Søborg</p>
+        </div>
+      </div>
+    </section>
+
+
+    
+<!-- Gallary Section -->
+    <section class=" py-12 px-4 md:px-0"  data-aos="fade-up" data-aos-duration="1000">
+      <!-- Title -->
+      <div class="text-center">
+        <h2 class="text-xl font-semibold">@undarmaa</h2>
+      <p class="text-[rgba(83,83,83,1)] mb-8">Follow us on</p>
+      </div>
+
+      <!-- Image Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-2" data-aos="zoom-in">
+        <img
+          src="Image/a (1).png"
+          alt="Gallery 1"
+          class="w-full h-full object-cover"
+        />
+        <img
+          src="Image/a (10).jpg"
+          alt="Gallery 1"
+          class="w-full h-full object-cover"
+        />
+        <img
+          src="Image/a (2).jpg"
+          alt="Gallery 1"
+          class="w-full h-full object-cover"
+        />
+        <img
+          src="Image/a (3).jpg"
+          alt="Gallery 1"
+          class="w-full h-full object-cover"
+        />
+        <img
+          src="Image/Rectangle 1661.png"
+          alt="Gallery 1"
+          class="w-full h-full object-cover"
+        />
+        <img
+          src="Image/a (1).png"
+          alt="Gallery 1"
+          class="w-full h-full object-cover"
+        />
+        <img
+          src="Image/a (10).jpg"
+          alt="Gallery 1"
+          class="w-full h-full object-cover"
+        />
+        <img
+          src="Image/a (3).jpg"
+          alt="Gallery 1"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="border-t bg-white">
+      <div
+        class="px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10"
+      >
+        <!-- Logo & About -->
+        <div>
+          <img src="Image/logo.png" alt="Logo" class="h-10 mb-4" />
+          <p class="mb-4">
+            Naturlig luksus fra Mongoliet. Vi tilbyder eksklusiv strik i
+            cashmere, yak- og kameluld skabt efter traditionelle metoder med
+            moderne dansk design.
+          </p>
+          <p class="font-semibold mb-2">We accept</p>
+          <div class="flex space-x-2">
+            <img src="Image/1 (1).png" alt="" class="w-14 h-8">
+            <img src="Image/1 (2).png" alt="" class="w-14 h-8">
+            <img src="Image/1 (3).png" alt="" class="w-14 h-8">
+            <img src="Image/1 (4).png" alt="" class="w-14 h-8">
+            <img src="Image/1 (5).png" alt="" class="w-14 h-8">
+            <img src="Image/1 (6).png" alt="" class="w-14 h-8">
+            <img src="Image/1 (7).png" alt="" class="w-14 h-8">
+          </div>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h3 class="font-semibold mb-4">Products</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#">Yakuld</a></li>
+            <li><a href="#">Kameluld</a></li>
+            <li><a href="#">Tilbehør</a></li>
+            <li><a href="#">Gavekort</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h3 class="font-semibold mb-4">Services</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#">Størrelsesguide</a></li>
+            <li><a href="#">Pleje & Vask</a></li>
+            <li><a href="#">Returpolitik</a></li>
+            <li><a href="#">Levering</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Shop Info -->
+        <div>
+          <h3 class="font-semibold mb-4">Shop</h3>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <i class="fa-solid fa-store mr-2"></i> Dangol Trading<br />Carl
+              Møllers Allé 33<br />2860 Søborg
+            </li>
+            <li><i class="fa-solid fa-phone mr-2"></i> +45 12 34 56 78</li>
+            <li><i class="fa-solid fa-envelope mr-2"></i> hej@undarmaa.dk</li>
+            <li><i class="fa-regular fa-clock mr-2"></i> Man-Fre: 10-17</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="flex justify-around py-5">
+        <p>© 2025 undarmaa.com</p>
+        <div class="flex space-x-4">
+          <a href="#"
+            ><i class="fa-brands fa-facebook text-lg text-blue-600"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-brands fa-instagram text-lg text-red-600"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+
+     <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
